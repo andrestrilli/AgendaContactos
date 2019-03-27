@@ -15,4 +15,9 @@
         <item>@string/create</item>
         <item>@string/list</item>
     </string-array>
+
+    <string name="ListaVacia">No Contacts Yet</string>
+
+    <string name="phone">Phone</string>
+
 </resources>

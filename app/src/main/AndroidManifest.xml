@@ -19,6 +19,7 @@
 
         <activity android:name=".CreateContact"></activity>
         <activity android:name=".ListContact"></activity>
+        <activity android:name=".ContactDetail"></activity>
     </application>
 
 
