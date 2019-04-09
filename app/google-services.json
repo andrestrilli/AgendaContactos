@@ -1,0 +1,44 @@
+{
+  "project_info": {
+    "project_number": "381914156038",
+    "firebase_url": "https://agendacontactos-18a65.firebaseio.com",
+    "project_id": "agendacontactos-18a65",
+    "storage_bucket": "agendacontactos-18a65.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:381914156038:android:91dbdecc3839fe97",
+        "android_client_info": {
+          "package_name": "com.example.agendacontactos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "381914156038-oc17ji3ikeog26r8j8ngg36brbphg74s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.agendacontactos",
+            "certificate_hash": "af606d0f5955c48fc10369d7922122a2ef0723dd"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4rXF8qFeTHznOZZwW9QI8jcH69M2pO1M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "381914156038-2sedtobvb7687gq9rnamogv8im0rfouv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
