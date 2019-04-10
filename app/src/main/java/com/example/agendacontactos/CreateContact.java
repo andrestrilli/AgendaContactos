@@ -40,9 +40,10 @@ public class CreateContact extends AppCompatActivity {
         LastNameV = LastName.getText().toString();
         PhoneV = Phone.getText().toString();
         CellPhoneV = CellPhone.getText().toString();
-
-        //Validacion del telefono
-        if (PhoneV.length()!=7){
+        if (NameV.isEmpty()||LastNameV.isEmpty()) {
+            Toast.makeText(this,R.string.emptyFields,Toast.LENGTH_LONG).show();
+            //Validacion del telefono
+        }else if (PhoneV.length()!=7){
             Toast.makeText(this,R.string.errorPhone,Toast.LENGTH_LONG).show();
         }else if (CellPhoneV.length() != 10){
             Toast.makeText(this,R.string.errorCellPhone,Toast.LENGTH_LONG).show();
