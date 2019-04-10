@@ -10,7 +10,8 @@
     <string name="save">Save</string>
 
     <string name="done">Saved Successfully</string>
-
+<string name="errorPhone">Type a Correct Phone</string>
+<string name="errorCellPhone">Type a Correct CellPhone</string>
     <string-array name="Menu">
         <item>@string/create</item>
         <item>@string/list</item>

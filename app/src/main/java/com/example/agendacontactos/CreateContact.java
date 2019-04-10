@@ -41,17 +41,26 @@ public class CreateContact extends AppCompatActivity {
         PhoneV = Phone.getText().toString();
         CellPhoneV = CellPhone.getText().toString();
 
-        Contact C = new Contact(Id,NameV,LastNameV,PhoneV,CellPhoneV);
-        C.SaveContact();
+        //Validacion del telefono
+        if (PhoneV.length()!=7){
+            Toast.makeText(this,R.string.errorPhone,Toast.LENGTH_LONG).show();
+        }else if (CellPhoneV.length() != 10){
+            Toast.makeText(this,R.string.errorCellPhone,Toast.LENGTH_LONG).show();
+        }else {
+
+            //Validacion del celular
+
+            Contact C = new Contact(Id, NameV, LastNameV, PhoneV, CellPhoneV);
+            C.SaveContact();
 // Write a message to the database
 
-       DatabaseReference myRef = database.getReference("Contactos");
-       myRef.child(C.getId()).setValue(C);
+            DatabaseReference myRef = database.getReference("Contactos");
+            myRef.child(C.getId()).setValue(C);
 
-        Toast.makeText(this,R.string.done,Toast.LENGTH_LONG).show();
-        //incremento el ID;
-        IdAut++;
-
+            Toast.makeText(this, R.string.done, Toast.LENGTH_LONG).show();
+            //incremento el ID;
+            IdAut++;
+        }
     }
 
 
